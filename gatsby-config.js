@@ -57,8 +57,16 @@ module.exports = {
                 name: `images`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `markdowns`,
+                path: `${__dirname}/src/markdown`,
+            },
+        },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
         {
             resolve: `gatsby-plugin-google-adsense`,
             options: {
